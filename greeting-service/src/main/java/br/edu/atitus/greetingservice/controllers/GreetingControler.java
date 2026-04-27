@@ -31,7 +31,7 @@ public class GreetingControler {
         if (name == null || name.isEmpty()) {
             name = config.getDefaultName();
         }
-        String greetingReturn = String.format("%s, %s!!!", config.getGreeting(), name);
+        String greetingReturn = String.format("%s %s!!!", config.getGreeting(), name);
         return greetingReturn;
     }
 
@@ -40,7 +40,7 @@ public class GreetingControler {
     if (name == null || name.isEmpty()) {
         name = config.getDefaultName();
     }
-    String greetingReturn = String.format("%s, %s!!!", config.getGreeting(), name);
+    String greetingReturn = String.format("%s %s!!!", config.getGreeting(), name);
     return greetingReturn;
     }
 
